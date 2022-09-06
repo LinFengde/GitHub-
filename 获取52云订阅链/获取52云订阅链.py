@@ -45,5 +45,3 @@ http_back = http.get(f"https://{url}/user")
 #网站是正则表达式(我暂时理解不了)
 DYurl = re.search(f"https://[\\w./?=&]+{tok}[\\w=&]*", http_back).group(0)
 print (DYurl)
-
-
