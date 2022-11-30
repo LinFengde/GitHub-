@@ -1,8 +1,8 @@
 #!/bin/bash
 #注册界面的请求链接
-RegisterUrl=http://2.52vpn.club/auth/register
+RegisterUrl=http://4.52vpn.club/auth/register
 #登陆页面的请求链接
-LoginUrl=http://2.52vpn.club/auth/login
+LoginUrl=http://4.52vpn.club/auth/login
 #tok
 tok="b=3"
 #随机生成一个10位数的邮箱
@@ -22,6 +22,6 @@ echo -e `$curl_path "$RegisterUrl" -X POST -d "email=$email%40qs.com&name=zido&p
 echo -e `$curl_path -b cookie "$LoginUrl" -X POST -d "email=$email%40qs.com&passwd=$password&code" -c cookie`
 #获取订阅链并输出到add.txt
 #sed:编辑信息
-$curl_path -b cookie "http://2.52vpn.club/user##" | sed 's/"/\n/g' | grep "$tok" | head -n 1 > add.txt
+$curl_path -b cookie "http://4.52vpn.club/user##" | sed 's/"/\n/g' | grep "$tok" | head -n 1 > add.txt
 #查看这个文件
 cat add.txt
