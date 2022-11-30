@@ -1,7 +1,7 @@
 import random
 import re
 import requests
-url = '2.52vpn.club'
+url = '4.52vpn.club'
 #注册界面的请求链接
 #f"字符串{变量}":在字符串里面的括号内输入
 RegisterUrl=f"http://{url}/auth/register"
